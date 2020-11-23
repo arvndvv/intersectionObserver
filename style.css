@@ -48,4 +48,73 @@ body .dark {
   background: #555;
   color: whitesmoke;
 }
+
+body .section p,
+body .section h1 {
+  opacity: 0;
+}
+
+body .section:nth-child(odd).fx p,
+body .section:nth-child(odd).fx h1 {
+  -webkit-animation: fadeleft 1s ease both;
+          animation: fadeleft 1s ease both;
+}
+
+body .section:nth-child(even).fx p,
+body .section:nth-child(even).fx h1 {
+  -webkit-animation: faderight 1s ease both;
+          animation: faderight 1s ease both;
+}
+
+@-webkit-keyframes fadeleft {
+  from {
+    -webkit-transform: translate(-5em, 0);
+            transform: translate(-5em, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeleft {
+  from {
+    -webkit-transform: translate(-5em, 0);
+            transform: translate(-5em, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes faderight {
+  from {
+    -webkit-transform: translate(5em, 0);
+            transform: translate(5em, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes faderight {
+  from {
+    -webkit-transform: translate(5em, 0);
+            transform: translate(5em, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
 /*# sourceMappingURL=style.css.map */

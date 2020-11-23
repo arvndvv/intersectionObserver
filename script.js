@@ -15,7 +15,8 @@ const observer = new IntersectionObserver(function(entries, observer) {
             return;
         }
         entry.target.classList.toggle('dark');
-        // to stop observing(useful for lazy loading)
+        entry.target.classList.add('fx')
+            // to stop observing(useful for lazy loading)
         observer.unobserve(entry.target);
 
 
