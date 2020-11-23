@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body .section {
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  text-align: justify;
+  text-justify: newspaper;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25%;
+  vertical-align: middle;
+  color: cornsilk;
+}
+
+body .section1 {
+  background: burlywood;
+}
+
+body .section2 {
+  background: cornflowerblue;
+}
+
+body .section3 {
+  background: crimson;
+}
+
+body .section4 {
+  background: darkslateblue;
+}
+/*# sourceMappingURL=style.css.map */

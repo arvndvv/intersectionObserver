@@ -1,0 +1,37 @@
+$dark:#333;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    .section {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        text-align: justify;
+        text-justify: newspaper;
+        justify-content: center;
+        padding: 25%;
+        vertical-align: middle;
+        color: cornsilk;
+    }
+    .section1 {
+        background: burlywood;
+    }
+    .section2 {
+        background: cornflowerblue;
+    }
+    .section3 {
+        background: crimson;
+    }
+    .section4 {
+        background: darkslateblue;
+    }
+}
