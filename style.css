@@ -43,4 +43,9 @@ body .section3 {
 body .section4 {
   background: darkslateblue;
 }
+
+body .dark {
+  background: #555;
+  color: whitesmoke;
+}
 /*# sourceMappingURL=style.css.map */
